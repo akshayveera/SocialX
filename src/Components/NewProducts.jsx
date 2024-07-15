@@ -38,7 +38,7 @@ const NewProducts = () => {
 
         <ul className='flex flex-wrap '>
             {
-                data?.data?.products?.map((item)=>(<ProductCard data={item} showPrice={true}/>))
+                data?.data?.products?.map((item)=>(<ProductCard key={item?.asin} data={item} showPrice={true}/>))
             }
         </ul>
 
